@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Fanex.N88.Core.Client</id>
+    <version>1.0.0-alpha-1</version>
+    <title>Fanex.N88.Core.Client</title>
+    <authors>Oliver</authors>
+    <owners>Oliver</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>http://localhost:8989/</projectUrl>
+    <iconUrl>http://localhost:8989/</iconUrl>
+    <description>Library support access data in N88_UserControl</description>
+    <releaseNotes>Alpha 1</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Fanex N88 Client Core</tags>
+  </metadata>
+</package>

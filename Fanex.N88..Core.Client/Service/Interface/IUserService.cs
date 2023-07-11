@@ -26,5 +26,7 @@
         bool IsHavingPermission(int userId, int siteId, string functionKey, Constant.Policy policy);
 
         IEnumerable<FunctionPolicy> GetPermissions(int userId, int siteId, string parentFunctionKey, string environment = Constant.UAT);
+
+        IEnumerable<Setting> GetSettings(int userId);
     }
 }

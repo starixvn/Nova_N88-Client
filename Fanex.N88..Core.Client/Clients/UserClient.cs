@@ -51,6 +51,11 @@
             return Get<int>(CreateRequestUri(string.Format(RelativePaths.GetUserLevel, userId, siteId)));
         }
 
+        public IEnumerable<Setting> GetSettings(int userId)
+        {
+            return Get<IEnumerable<Setting>>(CreateRequestUri(string.Format(RelativePaths.GetSettings, userId)));
+        }
+
         public int GetPermission(int userId, int siteId, string functionKey)
         {
             return Get<int>(CreateRequestUri(string.Format(RelativePaths.GetPermission, userId), new { siteId, functionKey }));
@@ -76,6 +81,7 @@
             public const string GetPermission = "/user/{0}/sitepolicy";
             public const string GetPermissions = "/user/{0}/functionPolicies";
             public const string GetUserPolicies = "/user/userPolicies";
+            public const string GetSettings = "/user/{0}/settings";
         }
     }
 }

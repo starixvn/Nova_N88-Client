@@ -35,8 +35,6 @@
 
         public string DefaultBaseCurrencyCode { get; set; }
 
-        public int DataRangeLimitation { get; set; }
-
         public bool IsLicenseeUser { get; set; }
     }
 }

@@ -100,6 +100,13 @@
             return _userClient.GetPermissions(userId, siteId, parentFunctionKey, environment);
         }
 
+        public IEnumerable<Setting> GetSettings(int userId)
+        {
+            Check.Argument.IsNotNegativeOrZero(userId, "userId");
+
+            return _userClient.GetSettings(userId);
+        }
+
         public IEnumerable<UserPolicy> GetUserPolicies(string functionKey, int siteId)
         {
             Check.Argument.IsNotEmpty(functionKey, "functionKey");

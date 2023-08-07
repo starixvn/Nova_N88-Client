@@ -138,6 +138,7 @@
     <Compile Include="Extensions\LoginClientExtension.cs" />
     <Compile Include="Extensions\GroupClientExtension.cs" />
     <Compile Include="Extensions\ObjectExtension.cs" />
+    <Compile Include="Models\Setting.cs" />
     <Compile Include="Models\Function.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\MenuItem.cs" />

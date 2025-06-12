@@ -7,7 +7,6 @@
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using System.Web;
 
     public class NAPDelegatingHandler : DelegatingHandler
     {
@@ -23,8 +22,6 @@
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             string requestContentBase64String = string.Empty;
-
-            string requestUri = HttpUtility.UrlEncode(request.RequestUri.AbsoluteUri.ToLower());
 
             string requestHttpMethod = request.Method.Method;
 
@@ -48,7 +45,7 @@
             }
 
             // Creating the raw signature string
-            string signatureRawData = string.Format("{0}{1}{2}{3}{4}{5}", _appId, requestHttpMethod, requestUri, requestTimeStamp, nonce, requestContentBase64String);
+            string signatureRawData = string.Format("{0}{1}{2}{3}{4}", _appId, requestHttpMethod, requestTimeStamp, nonce, requestContentBase64String);
 
             var secretKeyByteArray = Convert.FromBase64String(_secretAccessKey);
 

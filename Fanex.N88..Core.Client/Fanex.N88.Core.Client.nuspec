@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Fanex.N88.Core.Client</id>
-    <version>1.0.4-alpha-6</version>
+    <version>1.0.4-alpha-9</version>
     <title>Fanex.N88.Core.Client</title>
     <authors>Hogan</authors>
     <owners>Oliver</owners>
@@ -15,4 +15,7 @@
     <copyright>Copyright 2021</copyright>
     <tags>Fanex N88 Client Core</tags>
   </metadata>
+   <files>
+    <file src="bin\Release\Fanex.N88.Core.Client.dll" target="lib\net461" />
+  </files>
 </package>
